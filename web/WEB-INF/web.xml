@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>adminregistration</servlet-name>
+        <servlet-class>adminregistration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminregistration</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    // Mapping for admin login
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/adminprofile</url-pattern>
+    </servlet-mapping>
+    
+    // Admission form
+    <servlet>
+        <servlet-name>admissionform</servlet-name>
+        <servlet-class>admissionform</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admissionform</servlet-name>
+        <url-pattern>/admission</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>teacherlogin</servlet-name>
+        <servlet-class>teacherlogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacherlogin</servlet-name>
+        <url-pattern>/teacherlogin1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>teacherregister</servlet-name>
+        <servlet-class>teacherregister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacherregister</servlet-name>
+        <url-pattern>/tregister</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Studentlogin</servlet-name>
+        <servlet-class>Studentlogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Studentlogin</servlet-name>
+        <url-pattern>/studentloginedin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Studentregister</servlet-name>
+        <servlet-class>Studentregister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Studentregister</servlet-name>
+        <url-pattern>/studentregistersucc</url-pattern>
+    </servlet-mapping>
+    
+    
+    // mapping for post notice
+    <servlet>
+        <servlet-name>notice</servlet-name>
+        <servlet-class>noticeandresult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>notice</servlet-name>
+        <url-pattern>/post_notice</url-pattern>
+    </servlet-mapping>
+    
+    // mapping for reject admissionrequest
+    
+    
+    
+    
+       <servlet>
+        <servlet-name>StudentAdmissiondelete</servlet-name>
+        <servlet-class>StudentAdmissiondelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentAdmissiondelete</servlet-name>
+        <url-pattern>/admissinrequestdelete</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+     // mapping for addmissionrequest
+      <servlet>
+        <servlet-name>StudentAdmissionadd</servlet-name>
+        <servlet-class>StudentAdmissionadd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentAdmissionadd</servlet-name>
+        <url-pattern>/admissionrequestadd</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ //mapping for attendance for bim students
+ 
+ 
+ 
+ 
+   <servlet>
+        <servlet-name>Attendancesubmit</servlet-name>
+        <servlet-class>Attendancesubmit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Attendancesubmit</servlet-name>
+        <url-pattern>/submitattandance</url-pattern>
+    </servlet-mapping>
+    
+    //mapping for attendance for bba students
+  <servlet>
+        <servlet-name>Attendancesubmitbba</servlet-name>
+        <servlet-class>Attendancesubmitbba</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Attendancesubmitbba</servlet-name>
+        <url-pattern>/submitattandancebba</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    //mapping for result of bim
+    
+    <servlet>
+        <servlet-name>bimresult</servlet-name>
+        <servlet-class>bimresult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bimresult</servlet-name>
+        <url-pattern>/resultbim,bba</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    //mapping for logout 
+    
+        <servlet>
+        <servlet-name>logoutservlet</servlet-name>
+        <servlet-class>logoutservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutservlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
